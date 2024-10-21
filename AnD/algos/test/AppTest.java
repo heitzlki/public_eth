@@ -1,6 +1,7 @@
-package AnD.algos;
+package AnD.algos.test;
 
 import org.junit.*;
+import AnD.algos.App;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 

@@ -1,7 +1,8 @@
-package AnD.algos.sort;
+package AnD.algos.test.sort;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.Test;
+import AnD.algos.sort.InsertionSort;
 
 public class InsertionSortTest {
 

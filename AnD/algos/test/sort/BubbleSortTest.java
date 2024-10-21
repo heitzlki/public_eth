@@ -1,15 +1,17 @@
-package AnD.algos.sort;
+
+package AnD.algos.test.sort;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.Test;
+import AnD.algos.sort.BubbleSort;
 
-public class SelectionSortTest {
+public class BubbleSortTest {
 
   @Test
   void testAlreadySortedArray() {
     int[] array = {1, 2, 3, 4, 5};
     int[] expectedArray = {1, 2, 3, 4, 5};
-    int[] sortedArray = AnD.algos.sort.SelectionSort.sort(array);
+    int[] sortedArray = AnD.algos.sort.BubbleSort.sort(array);
     assertArrayEquals(expectedArray, sortedArray);
   }
 
@@ -17,7 +19,7 @@ public class SelectionSortTest {
   void testUnsortedArrayOdd() {
     int[] array = {5, 3, 1, 4, 2};
     int[] expectedArray = {1, 2, 3, 4, 5};
-    int[] sortedArray = AnD.algos.sort.SelectionSort.sort(array);
+    int[] sortedArray = AnD.algos.sort.BubbleSort.sort(array);
     assertArrayEquals(expectedArray, sortedArray);
   }
 
@@ -25,7 +27,7 @@ public class SelectionSortTest {
   void testUnsortedArrayEven() {
     int[] array = {5, 3, 1, 4, 2, 6};
     int[] expectedArray = {1, 2, 3, 4, 5, 6};
-    int[] sortedArray = AnD.algos.sort.SelectionSort.sort(array);
+    int[] sortedArray = AnD.algos.sort.BubbleSort.sort(array);
     assertArrayEquals(expectedArray, sortedArray);
   }
 
@@ -33,7 +35,7 @@ public class SelectionSortTest {
   void testEmptyArray() {
     int[] array = {};
     int[] expectedArray = {};
-    int[] sortedArray = AnD.algos.sort.SelectionSort.sort(array);
+    int[] sortedArray = AnD.algos.sort.BubbleSort.sort(array);
     assertArrayEquals(expectedArray, sortedArray);
   }
 
@@ -41,7 +43,7 @@ public class SelectionSortTest {
   void testSingleElementArray() {
     int[] array = {1};
     int[] expectedArray = {1};
-    int[] sortedArray = AnD.algos.sort.SelectionSort.sort(array);
+    int[] sortedArray = AnD.algos.sort.BubbleSort.sort(array);
     assertArrayEquals(expectedArray, sortedArray);
   }
 
@@ -49,7 +51,7 @@ public class SelectionSortTest {
   void testArrayWithDuplicates() {
     int[] array = {3, 1, 2, 3, 1};
     int[] expectedArray = {1, 1, 2, 3, 3};
-    int[] sortedArray = AnD.algos.sort.SelectionSort.sort(array);
+    int[] sortedArray = AnD.algos.sort.BubbleSort.sort(array);
     assertArrayEquals(expectedArray, sortedArray);
   }
 }

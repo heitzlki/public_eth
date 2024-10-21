@@ -1,16 +1,17 @@
-package AnD.algos.search;
+package AnD.algos.test.search;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
+import AnD.algos.search.BinarySearch;
 
-class LinearSearchTest {
+class BinarySearchTest {
 
     @Test
     void testTargetPresent() {
         int[] array = {1, 2, 3, 4, 5};
         int target = 3;
         int expectedIndex = 2;
-        int result = AnD.algos.search.LinearSearch.search(array, target);
+        int result = AnD.algos.search.BinarySearch.search(array, target);
         assertEquals(expectedIndex, result);
     }
 
@@ -19,7 +20,7 @@ class LinearSearchTest {
         int[] array = {1, 2, 3, 4, 5};
         int target = 6;
         int expectedIndex = -1;
-        int result = AnD.algos.search.LinearSearch.search(array, target);
+        int result = AnD.algos.search.BinarySearch.search(array, target);
         assertEquals(expectedIndex, result);
     }
 
@@ -28,7 +29,7 @@ class LinearSearchTest {
         int[] array = {};
         int target = 3;
         int expectedIndex = -1;
-        int result = AnD.algos.search.LinearSearch.search(array, target);
+        int result = AnD.algos.search.BinarySearch.search(array, target);
         assertEquals(expectedIndex, result);
     }
 
@@ -37,7 +38,7 @@ class LinearSearchTest {
         int[] array = {3};
         int target = 3;
         int expectedIndex = 0;
-        int result = AnD.algos.search.LinearSearch.search(array, target);
+        int result = AnD.algos.search.BinarySearch.search(array, target);
         assertEquals(expectedIndex, result);
     }
 
@@ -46,7 +47,7 @@ class LinearSearchTest {
         int[] array = {1};
         int target = 3;
         int expectedIndex = -1;
-        int result = AnD.algos.search.LinearSearch.search(array, target);
+        int result = AnD.algos.search.BinarySearch.search(array, target);
         assertEquals(expectedIndex, result);
     }
 }
