@@ -2,7 +2,7 @@ package AnD.algos.sort;
 
 import java.util.Arrays;
 
-public class InsertionSort {
+public class HeapSort {
   public static void main(String[] args) {
     int[] array = {1, 5, 4, 3, 2};
     int[] sorted = sort(array);
