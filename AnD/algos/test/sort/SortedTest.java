@@ -11,8 +11,6 @@ public class SortedTest {
     boolean expectedResult = true;
     boolean result = AnD.algos.sort.Sorted.validate(array);
     assertEquals(expectedResult, result);
-
-
   }
 
   @Test
