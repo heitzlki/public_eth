@@ -10,8 +10,12 @@ public class UnicodeValues {
     printUnicodeValues(str);
 
 
-    String one = "Hello";
-    String two = "World";
+    String one = "AB";
+    String two = "BB";
+    printCompareTo(one, two);
+
+    one = "AA";
+    two = "AB";
     printCompareTo(one, two);
   }
 
@@ -25,16 +29,21 @@ public class UnicodeValues {
 
   public static void printCompareTo(String one, String two) {
     if (one != null && two != null) {
-      char oneChar = one.charAt(0);
-      int oneUnicode = (int) oneChar;
+      System.out.println("One: " + one);
+      printUnicodeValues(one);
+      System.out.println("Two: " + two);
+      printUnicodeValues(two);
+      System.out.println(one + " - " + two + " = " + one.compareTo(two));
+      // char oneChar = one.charAt(0);
+      // int oneUnicode = (int) oneChar;
 
-      char twoChar = two.charAt(0);
-      int twoUnicode = (int) twoChar;
-      System.out.println(one + " : " + oneChar + " -> " + oneUnicode);
-      System.out.println(two + " : " + twoChar + " -> " + twoUnicode);
+      // char twoChar = two.charAt(0);
+      // int twoUnicode = (int) twoChar;
+      // System.out.println(one + " : " + oneChar + " -> " + oneUnicode);
+      // System.out.println(two + " : " + twoChar + " -> " + twoUnicode);
 
 
-      System.out.println(oneUnicode + " - " + twoUnicode + " = " + one.compareTo(two));
+      // System.out.println(oneUnicode + " - " + twoUnicode + " = " + one.compareTo(two));
     }
   }
 }
